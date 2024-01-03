@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getAnimalData()">Get Animal Data</button>
+    <script>
+
+        //Using API to fetch data
+
+        //If you know there is an promise or an ansync function Use async await function approach or .then approach to get the data.
+        
+        // function getAnimalData() {
+        //     fetch("https://fakerapi.it/api/v1/persons")
+        //         .then(function(response) {
+        //             response.json()
+        //                 .then(function(finalData) {
+        //                     console.log(finalData)
+        //                 })
+        //         })
+        // }
+
+        //or
+
+        async function getAnimalData() {
+            const response = await fetch("https://fakerapi.it/api/v1/persons")
+            const finalData = await response.json()
+            console.log(finalData)
+        }
+        getAnimalData()
+
+
+        
+    </script>
+</body>
+</html>
