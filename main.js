@@ -7,7 +7,7 @@ const app = express()
 
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://deevee4712:CohortWeek3@cohortweek3.39ooljk.mongodb.net/signupData")
+mongoose.connect("~~~Your Database URL~~~")
 
 const users = mongoose.model("Users",{name: String, email: String, password: String})
 
