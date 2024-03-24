@@ -10,6 +10,10 @@
 const express = require("express")
 const app = express() //making instance of express
 
+app.use(express.json()); // Middleware to parse JSON bodies
+
+
+// express.json() middleware parses the JSON data and makes it available in req.body property of your route handlers.
 
 //Anytime we restart the process the in-memory data is reset. that is why we use databases
 const users =[{
@@ -22,7 +26,7 @@ const users =[{
     }]
 }]
 
-app.use(express.json());
+
 
 
 //getting info and displaying it using res.json
