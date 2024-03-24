@@ -3,3 +3,7 @@
 * npm install express
 * npm install mongoose
 * npm install zod
+
+OR 
+* npm install
+  //installs all the packages needed
