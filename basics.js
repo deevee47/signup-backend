@@ -12,6 +12,7 @@ const app = express() //making instance of express
 
 app.use(express.json()); // Middleware to parse JSON bodies
 
+//Basically, you can send data in multiple types to a server, app.use(express.json()) parses the data to a readable format for the backend code/server
 
 // express.json() middleware parses the JSON data and makes it available in req.body property of your route handlers.
 
