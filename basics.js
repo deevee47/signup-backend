@@ -3,15 +3,15 @@
 404 - Not Found
 500 - Internal Server Error
 411 - Input was incorrect
-403 - Returning something you dont have the access to */
+403 - Returning something you do not have the access to */
 
-
+//make sure to npm init -y, npm install express
 
 const express = require("express")
 const app = express() //making instance of express
 
 
-//Anytime we restart the process the in memory data is reset . that is why we use databases
+//Anytime we restart the process the in-memory data is reset. that is why we use databases
 const users =[{
     name: "John",
     kidneys: [{
@@ -116,4 +116,4 @@ function checkOneUnhealthyKidneys() {
 app.listen(3000) //3000 is port
 
 
-//To view: use portman and localhost:port/
+//To view: use postman and go to URL: localhost:port/
