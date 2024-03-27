@@ -6,4 +6,4 @@
 
 OR 
 * npm install
-  //installs all the packages needed
+  (installs all the packages needed)
